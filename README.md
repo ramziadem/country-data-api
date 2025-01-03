@@ -6,8 +6,8 @@ Welcome to the Country Information API repository! This API provides detailed in
 
 - [Overview](#overview)
 - [Usage](#how-to-use-it)
--- [For HTML/JS](for-htmljs)
--- [For NEXT.JS/REACT.JS](for-nextjs-reactjs)
+- [For HTML/JS](for-htmljs)
+- [For NEXT.JS/REACT.JS](for-nextjs-reactjs)
 
 ## Overview
 
