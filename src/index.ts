@@ -5,11 +5,11 @@ import path from 'path';
 const app = express();
 const port = 3000;
 
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, '../public')));
 
 
 app.get('/', (req: Request, res: Response) => {
-  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+  res.sendFile(path.join(__dirname, '../public', 'index.html'));
 });
 
 // Countries route with filtering
