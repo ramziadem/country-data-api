@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Countries Data API</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="shortcut icon" href="https://raw.githubusercontent.com/ramziadem/country-data-api/refs/heads/main/countries-api-log.jpeg" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const domain = window.location.origin;
+      const filters = [
+        { name: 'Name', example: 'name=Canada' },
+        { name: 'Code', example: 'code=CA' },
+        { name: 'Dial Code', example: 'dial_code=1' },
+        { name: 'Region', example: 'region=Americas' },
+        { name: 'Subregion', example: 'subregion=Northern America' },
+        { name: 'Languages', example: 'languages=English' },
+        { name: 'Currency', example: 'currency=USD' }
+      ];
+
+      const ul = document.getElementById('filters-list');
+      filters.forEach(filter => {
+        const li = document.createElement('li')
+        li.classList.add('my-8')
+        li.classList.add('block')
+        li.innerHTML = `<strong>
+                          ${filter.name}:
+                        </strong> 
+                        Filter by country ${filter.name.toLowerCase()}. </br>
+                        Example: 
+                        <code>
+                          ${domain}/countries?${filter.example}
+                        </code>`;
+        ul.appendChild(li);
+      });
+    });
+  </script>
+</head>
+<body class="bg-gradient-to-r from-gray-50 to-cyan-50 text-gray-900 min-h-screen">
+  <header class="bg-gray-800 text-white h-48 p-4 text-center">
+    <img src="https://raw.githubusercontent.com/ramziadem/country-data-api/refs/heads/main/countries-api-log.jpeg" alt="Logo" class="mx-auto w-[50%] h-[100%] float-left">
+    <h1 class="text-3xl relative grid font-bold w-[50%] float-right justigy-center text-center m-auto">Countries Data API</h1>
+  </header>
+  <main class="p-4 max-w-4xl mx-auto bg-white rounded-lg shadow-md flex-grow my-24">
+    <section class="mb-8">
+      <h2 class="text-2xl font-bold mb-2">About This API App</h2>
+      <p class="text-lg">This app provides detailed API information about countries around the world. You can filter countries by name, code, dial code, region, subregion, languages, and currency. You can use API of this app to integrate it in your app with each steps Follow <a href="#docs" class="text-sky-600 hover:text-sky-800">#Docs</a> for more</p>
+    </section>
+    <section class="mb-8" id="docs">
+      <h2 class="text-2xl font-bold mb-2">Documentation</h2>
+      <p class="text-lg mb-4">Check out the API documentation below to learn how to use this API.</p>
+      <div class="bg-gray-100 p-6 rounded-lg shadow-inner">
+        <h3 class="text-xl font-semibold mb-2">Before we start. You can find all countries list using this link: <a target="_blank" href="/countries" class="text-cyan-600 hover:text-cyan-800">SHOW ALL COUNTRIES</a></h3>
+        <h3 class="text-xl font-semibold mb-2">Available Filters</h3>
+        <ul id="filters-list" class="list-disc list-inside"></ul>
+        <h3 class="text-xl font-semibold mt-4 mb-2">Multiple Usage</h3>
+        <p class="text-lg">To get a list of countries in the Americas region that speak English, you can use the following query:</p>
+        <code class="block bg-gray-200 p-2 rounded mt-2"><span class="domain-placeholder"></span>/countries?region=Americas&languages=English</code><br>
+        
+        <p class="text-lg">To get a list of countries in the Americas region that sub region is North America, you can use the following query:</p>
+        <code class="block bg-gray-200 p-2 rounded mt-2"><span class="domain-placeholder"></span>/countries?region=Americas&subregion=North America</code>
+      </div>
+    </section>
+    <section class="mb-8">
+      <h2 class="text-2xl font-bold mb-2 text-center">Support Us <i class="bi bi-paypal ml-8"></i></h2>
+      <p class="text-lg mb-4">If you find this app useful, consider supporting us to help to buy a new domain and cover our hosting fees because the current hosting has limits. And to keep this API free forever.</p>
+      <div class="p-6 rounded-lg shadow-inner flex flex-col items-center text-center space-y-6">
+        <!-- First Section -->
+        <div>
+          <h3 class="text-xl font-semibold mb-4"> <i class="bi bi-paypal"></i></h3>
+          <h3 class="text-xl font-semibold mb-4">Using Paypal Link</h3>
+          <a target="_blank" href="https://www.paypal.com/donate/?hosted_button_id=G4JNDS2QEY7RG" 
+             class="bg-amber-500 text-white px-4 py-2 rounded hover:bg-amber-600 inline-block">
+            Donate with PayPal
+          </a>
+        </div>
+      
+        <!-- Second Section -->
+        <div>
+          <h3 class="text-xl font-semibold mb-4">Scan QR Code and Donate with Paypal <i class="bi bi-paypal ml-8"></i></h3>
+          <img src="./paypal-qr-code.png" alt="Donate using QR CODE Paypal" class="max-w-xs mx-auto rounded shadow-lg">
+        </div>
+      </div>
+      
+    </section>
+    <section class="mb-8">
+      <div class="bg-gray-100 p-6 rounded-lg shadow-inner flex flex-col items-center">
+        <div class="text-center mb-4">
+          <h3 class="text-2xl font-semibold mb-2"><i class="bi bi-envelope"></i><span class="ml-8">Get in Touch</span></h3>
+          <p class="text-lg">If you have any questions or need further information, feel free to contact me.</p>
+        </div>
+        <div class="flex flex-col items-center space-y-4">
+          <a href="https://ramziadem.com/contact/" target="_blank" class="flex items-center space-x-2 text-blue-500 hover:text-blue-700">
+            <i class="bi bi-envelope-fill text-2xl"></i>
+            <span class="text-lg">Contact Form</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="bg-gray-800 text-white text-center">
+    <div class="p-8 text-xl">
+      <p>&copy; 2023 Countries Data API. All rights reserved </p>
+      <p>Created by <a href="https://ramziadem.com/" class="text-cyan-200 hover:text-cyan-600">Ramzi Adem</a></p>
+    </div>
+  </footer>
+</body>
+</html>
