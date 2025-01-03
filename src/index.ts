@@ -7,11 +7,11 @@ const port = 3000;
 
 console.log('Current directory:', __dirname);
 
-app.use(express.static(path.join(__dirname, './public')));
+app.use(express.static(path.join(__dirname, '../src/public')));
 
 
 app.get('/', (req: Request, res: Response) => {
-  res.sendFile(path.join(__dirname, '../public', 'index.html'));
+  res.sendFile(path.join(__dirname, '../src/public', 'index.html'));
 });
 
 // Countries route with filtering
