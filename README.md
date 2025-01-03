@@ -8,6 +8,7 @@ Welcome to the Country Information API repository! This API provides detailed in
 - [Usage](#how-to-use-it)
 - [For HTML/JS](#for-html-js)
 - [For NEXT.JS/REACT.JS](#for-nextjs-reactjs)
+- [Examles](#examples)
 
 ## Overview
 
@@ -60,7 +61,7 @@ You can using the previous function by JS. Or you can using library of fetching 
    <b>Remember, using axios request inside useEffect on next.js/react.js</b>
 
 
-   ## Examples :
+   ## Examples
 
    - you can see this Article/Example to see how to use this API.
   
