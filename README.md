@@ -24,10 +24,10 @@ To get started with the Country Information API, follow these steps:
 1. Clone the repository:
    ```sh
    git clone https://github.com/yourusername/country-information-api.git
-
+   ```
 
    Navigate to the project directory:
-cd country-information-api
+``` cd country-information-api ```
 Public code references from 3 repositories
 Install dependencies:
 npm install
