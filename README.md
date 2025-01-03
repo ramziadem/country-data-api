@@ -5,12 +5,9 @@ Welcome to the Country Information API repository! This API provides detailed in
 ## Table of Contents
 
 - [Overview](#overview)
-- [Usage](#usage)
-- [Documentation](#documentation)
-- [Filters](#filters)
-- [Examples](#examples)
-- [Contributing](#contributing)
-- [License](#license)
+- [Usage](#how-to-use-it)
+-- [For HTML/JS](for-htmljs)
+-- [For NEXT.JS/REACT.JS](for-nextjs-reactjs)
 
 ## Overview
 
@@ -20,7 +17,7 @@ The Country Information API allows you to retrieve information about countries u
 
 To get started with the Country Information API, follow these steps:
 
-### For HTML/JS
+### For HTML / JS
 
 Using fetch function by JS :
 ```
@@ -42,7 +39,7 @@ Using fetch function by JS :
 
 ```
 
-### For NEXT.JS/REACT.JS :
+### For NEXT.JS / REACT.JS :
 
 You can using the previous function by JS. Or you can using library of fetching like Axios:
 
