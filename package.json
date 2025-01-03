@@ -7,7 +7,7 @@
   "type": "commonjs",
   "main": "/src/index.js",
   "scripts": {
-    "start": "ts-node src/index.ts",
+    "start": "node src/index.ts",
     "dev": "nodemon src/index.ts",
     "test": "ts-node src/test.ts"
   },
