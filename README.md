@@ -9,6 +9,8 @@ Welcome to the Country Information API repository! This API provides detailed in
 - [For HTML/JS](#for-html-js)
 - [For NEXT.JS/REACT.JS](#for-nextjs-reactjs)
 - [Examles](#examples)
+- [Contact ME](#contact-me)
+- [Donation](#donation)
 
 ## Overview
 
@@ -64,6 +66,12 @@ You can using the previous function by JS. Or you can using library of fetching 
    ## Examples
 
    - you can see this Article/Example to see how to use this API.
-  
-   If you have any question or you need to contact me. Please feel free to contact me from here : [ramziadem.com/contact/](https://ramziadem.com/contact/]
+
+   ## Contact Me
    
+   If you have any question or you need to contact me. Please feel free to contact me from here : [ramziadem.com/contact/](https://ramziadem.com/contact/)
+
+   ## Donation
+   
+    If you have any problem to using this API website or you see 504 Error code or any code. This because I'm using a free domain and limit hosting to host this API. If you like this API, please Donate me to buy a new domain and new hosting to make this API faster and remove limits of the current Hosting. If you want to donate, please use this link to donate us : [Donation Link]([https://ramziadem.com/contact/](https://country-data-api.onrender.com/#donate-us). And you can choose from link or scan paypal QR Code for that. And Follow instructions.
+
