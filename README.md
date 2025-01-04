@@ -73,5 +73,5 @@ You can using the previous function by JS. Or you can using library of fetching 
 
    ## Donation
    
-    If you have any problem to using this API website or you see 504 Error code or any code. This because I'm using a free domain and limit hosting to host this API. If you like this API, please Donate me to buy a new domain and new hosting to make this API faster and remove limits of the current Hosting. If you want to donate, please use this link to donate us : [Donation Link]([https://ramziadem.com/contact/](https://country-data-api.onrender.com/#donate-us). And you can choose from link or scan paypal QR Code for that. And Follow instructions.
+    If you have any problem to using this API website or you see 504 Error code or any code. This because I'm using a free domain and limit hosting to host this API. If you like this API, please Donate me to buy a new domain and new hosting to make this API faster and remove limits of the current Hosting. If you want to donate, please use this link to donate us : [Donation Link](https://country-data-api.onrender.com/#donate-us). And you can choose from link or scan paypal QR Code for that. And Follow instructions.
 
