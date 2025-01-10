@@ -1,9 +1,12 @@
 import express, { Request, Response } from 'express';
 import { countries } from './countriesList'; // Ensure this path is correct
 import path from 'path';
+import cors from 'cors';
 
 const app = express();
-const port = 3000;
+const port = 3333;
+
+app.use(cors()); 
 
 app.use(express.static(path.join(__dirname, 'public')));
 
@@ -14,7 +17,6 @@ app.get('/', (req: Request, res: Response) => {
 
 // Countries route with filtering
 app.get('/countries', (req: Request, res: Response) => {
-  console.log(req.query)
   try {
     const { name, code, dial_code, region, subregion, languages, currency } = req.query;
 
@@ -61,7 +63,7 @@ app.get('/countries', (req: Request, res: Response) => {
         country.currency.toLowerCase() === (currency as string).toLowerCase()
       );
     }
-  
+    
     res.setHeader('Content-Type', 'application/json');
     res.json(filteredCountries)
 
